@@ -23,6 +23,7 @@ Note: The `static` directory contains HTML files only.
 
 This module includes functions to:
 - Shortlist UHIDs based on "Uploaded" and "LLM" status in `Final.csv`.
+- If a directory dosnt exist, then Remove that entry from `Final.csv`, store that entry in `Logs/UHID error/output.csv` mapping each entry with its corresponding error. 
 - Create new batches by copying directories (batch size is user-defined).
 - Upload all studies.
 - Anonymize each study after uploading to PACS.
@@ -38,6 +39,8 @@ All related functions are in the `Upload` directory. The `upload.py` file orches
 - `Upload/`: Contains all functions and scripts for the upload process.
 - `Upload_Entire_Batch/`: Contains files used by the `Upload_Batch()` function.
 - `static/`: Contains HTML files only.
+
+  
 
 
 ---
